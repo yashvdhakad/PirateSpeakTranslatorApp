@@ -6,37 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aye Aye Captain! App</title>
-    <link href="/dist/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shalimar&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="font-[Manrope]">
+<body class="font-[Shalimar]">
     <header>
-        <nav class="py-10 px-6 bg-black text-zinc-100">
-            <h1 class="text-4xl font-bold text-center">Aye Aye Captain! App</h1>
+        <nav class="py-10 px-6 bg-[#052419] text-zinc-100">
+            <h1 class="text-6xl font-bold text-center">Aye Aye Captain!</h1>
         </nav>
     </header>
-    <main class="bg-[url(/pirateBg.jpg)] bg-cover bg-center bg-no-repeat text-zinc-800 text-center">
+    <main class="bg-[url(/pirate.webp)] bg-cover bg-center bg-no-repeat text-zinc-800 text-center">
         <!-- Input -->
         <section class="w-full h-full py-10 px-6 flex flex-col justify-start items-stretch space-y-6">
-            <textarea class="p-6 border text-xl font-bold" name="" id="input" cols="10" rows="4"
-                placeholder="Please put your sentence here."></textarea>
+            <textarea class="p-6 border text-6xl font-bold backdrop-blur bg-black/20 text-zinc-100 rounded-md" name="Translator" id="input"
+                cols="10" rows="4" placeholder="Please put your sentence here."></textarea>
         </section>
 
-        <button id="btnTranslate" class="text-base font-bold bg-zinc-800 text-zinc-100 py-3 px-12 rounded-md">Translate
+        <button id="btnTranslate" class="text-3xl font-bold bg-[#052419] text-zinc-100 py-3 px-12 rounded-md">Translate
             to Pirate Speak</button>
 
         <!-- Output -->
         <section class="w-full h-full py-10 px-6 flex flex-col justify-start items-stretch space-y-6">
-            <textarea class="p-6 border text-xl font-bold" name="" id="output" cols="10" rows="4"
-                placeholder="Your translation will appear here."></textarea>
+            <textarea class="p-6 border text-6xl font-bold backdrop-blur bg-black/20 text-zinc-100 rounded-md" name="Translator" id="output"
+                cols="10" rows="4" placeholder="Your translation will appear here."></textarea>
         </section>
     </main>
     <footer>
-        <div class="text-sm font-bold bg-yellow-500 text-zinc-800 py-4 px-6 text-center">&copy; Yash Dhakad ∞</div>
+        <div class="text-xl font-bold bg-[#052419] text-zinc-100 py-4 px-6 text-center">&copy; Yash Dhakad ∞</div>
     </footer>
     <script src="app.js"></script>
 </body>
